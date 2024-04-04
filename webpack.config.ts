@@ -1,6 +1,6 @@
 import path from "path";
 import { Configuration } from "webpack";
-import CopyWebpackPlugin from "copy-webpack-plugin";
+import HtmlWebpackPlugin from "html-webpack-plugin";
 
 enum Modes {
   dev = "development",
@@ -31,8 +31,8 @@ const config: Configuration = {
     path: path.resolve(__dirname, "dist"),
   },
   plugins: [
-    new CopyWebpackPlugin({
-      patterns: [{ from: "public" }],
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
     }),
   ],
 };

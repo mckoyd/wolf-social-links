@@ -1,11 +1,14 @@
 {
-  "name": "react-webpack",
+  "homepage": "https://mckoyd.github.io/wolf-social-links-profile/",
+  "name": "wolf-social-links-profile",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b prod -d build"
   },
   "keywords": [],
   "author": "",
@@ -21,8 +24,10 @@
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.23",
     "@types/react-router-dom": "^5.3.3",
+    "@types/webpack": "^5.28.5",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.11.0",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.6.0",
     "style-loader": "^3.3.4",
     "ts-loader": "^9.5.1",
