@@ -3,6 +3,8 @@ import { Root, createRoot } from "react-dom/client";
 import { RouterProvider, createHashRouter } from "react-router-dom";
 import App from "./pages/App";
 
+import "./index.css";
+
 const router = createHashRouter([
   {
     path: "*",
