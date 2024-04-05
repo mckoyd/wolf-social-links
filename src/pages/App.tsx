@@ -1,11 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import SocialDashboard from "./SocialDashboard";
+
+import "../styles/App.css";
 
 const App: React.FC = () => {
   return (
     <main className="app">
       <Routes>
-        <Route path="/" element={<h1>Wolf Social Links Profile</h1>} />
+        <Route path="/" element={<SocialDashboard />} />
       </Routes>
     </main>
   );
